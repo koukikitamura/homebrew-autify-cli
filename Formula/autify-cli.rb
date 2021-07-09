@@ -5,25 +5,25 @@
 class AutifyCli < Formula
   desc "Autify client"
   homepage "https://github.com/koukikitamura/autify-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/koukikitamura/autify-cli/releases/download/v1.0.0/autify-cli_darwin_x86_64.tar.gz"
-      sha256 "3acfb0719fd826fc53edb8042a1bb513ffdb9776d4cfdbcaf0ad86b7713dfae8"
+      url "https://github.com/koukikitamura/autify-cli/releases/download/v1.1.0/autify-cli_darwin_x86_64.tar.gz"
+      sha256 "f85167a7ffcd35836c5cc33e8ef2756c8968b7cef5afd8f483219fc514069036"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/koukikitamura/autify-cli/releases/download/v1.0.0/autify-cli_linux_x86_64.tar.gz"
-      sha256 "dade812fbd13053a4f093d0facf573e403ccfe665e042b4590280031eb9fe0cf"
+      url "https://github.com/koukikitamura/autify-cli/releases/download/v1.1.0/autify-cli_linux_x86_64.tar.gz"
+      sha256 "96a204c71204d012946438f7b7a15b4abc7eba152817693da3629055acb43f59"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koukikitamura/autify-cli/releases/download/v1.0.0/autify-cli_linux_arm64.tar.gz"
-      sha256 "bebf3937bfabdf0815c90bba0fe4789fbb80f107fdb9ab7180926bd4f167b127"
+      url "https://github.com/koukikitamura/autify-cli/releases/download/v1.1.0/autify-cli_linux_arm64.tar.gz"
+      sha256 "f1fb8908cf4c59f6ad1731ea9c14789380c1ab0502bf7a3e186c5f4debc68f0d"
     end
   end
 
